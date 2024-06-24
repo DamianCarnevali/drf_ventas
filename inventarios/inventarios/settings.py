@@ -5,7 +5,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
+SECRET_KEY = os.environ.get('SECRET_KEY', default='')
 
 
 DEBUG = 'RENDER' not in os.environ
@@ -60,6 +60,8 @@ AUTHENTICATION_BACKENDS = (
     'guardian.backends.ObjectPermissionBackend',
 )
 ANONYMOUS_USER_NAME = "anonimo"
+
+DJANGO_SETTINGS_MODULE = 'inventarios.settings'
 
 ROOT_URLCONF = 'inventarios.urls'
 
