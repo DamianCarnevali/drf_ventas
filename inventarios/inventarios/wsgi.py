@@ -1,7 +1,6 @@
 import os
 from django.core.wsgi import get_wsgi_application
-from inventarios.inventarios import settings
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings)
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'inventarios.inventarios.settings')
 
 application = get_wsgi_application()
