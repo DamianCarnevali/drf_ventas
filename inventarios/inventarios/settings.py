@@ -61,8 +61,6 @@ AUTHENTICATION_BACKENDS = (
 )
 ANONYMOUS_USER_NAME = "anonimo"
 
-DJANGO_SETTINGS_MODULE = 'inventarios.inventarios.settings'
-
 ROOT_URLCONF = 'inventarios.urls'
 
 TEMPLATES = [
