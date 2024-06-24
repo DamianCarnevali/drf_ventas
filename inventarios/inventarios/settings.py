@@ -26,7 +26,7 @@ APPS_PROJECT = [
     'django.contrib.staticfiles',
 ]
 APPS_THIRD = [
-    'rest-framework',
+    'rest_framework',
     'django_filters',
     'guardian',
     'drf_yasg',
@@ -53,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 # Configuración de Autenticación
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
