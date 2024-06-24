@@ -6,7 +6,7 @@ set -o errexit
 pip install -r requirements.txt
 
 #Navega hacia la ruta correcta del manage.py
-cd /opt/render/project/src/drf_ventas/drf_ventas/inventarios
+cd /opt/render/project/src/drf_ventas/inventarios
 
 # Convierte los archivos estáticos (DRF usa diseño y navegación por defecto)
 python manage.py collectstatic --no-input
