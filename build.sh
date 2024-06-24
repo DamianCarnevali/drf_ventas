@@ -13,3 +13,5 @@ python manage.py collectstatic --no-input
 
 # Aplica las migraciones de la base de datos
 python manage.py migrate
+
+cd /opt/render/project/src/inventarios/inventarios/settings
