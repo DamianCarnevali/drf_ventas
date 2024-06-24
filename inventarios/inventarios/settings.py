@@ -5,7 +5,8 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', default='')
+SECRET_KEY = os.environ.get(
+    'SECRET_KEY', default=">Uh1G4x(![K*^[^FK,Zb'b]5x % n.Xg")
 
 
 DEBUG = 'RENDER' not in os.environ
