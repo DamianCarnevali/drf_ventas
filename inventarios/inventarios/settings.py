@@ -62,7 +62,7 @@ AUTHENTICATION_BACKENDS = (
 )
 ANONYMOUS_USER_NAME = "anonimo"
 
-ROOT_URLCONF = 'inventarios.urls'
+ROOT_URLCONF = 'inventarios.inventarios.urls'
 
 TEMPLATES = [
     {
