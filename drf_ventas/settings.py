@@ -62,7 +62,7 @@ AUTHENTICATION_BACKENDS = (
 )
 ANONYMOUS_USER_NAME = "anonimo"
 
-ROOT_URLCONF = 'inventarios.urls'
+ROOT_URLCONF = 'drf_ventas.urls'
 
 TEMPLATES = [
     {
@@ -80,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'inventarios.wsgi.application'
+WSGI_APPLICATION = 'drf_ventas.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
