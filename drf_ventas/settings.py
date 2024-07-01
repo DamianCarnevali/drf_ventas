@@ -32,7 +32,10 @@ APPS_THIRD = [
     'guardian',
     'drf_yasg',
 ]
-APPS_CREATED = []
+APPS_CREATED = [
+
+]
+
 INSTALLED_APPS = APPS_PROJECT + APPS_THIRD + APPS_CREATED
 
 REST_FRAMEWORK = {
@@ -55,7 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# Configuración de Autenticación
+# Configuración de Autenticación usando lo propio de Django y Guardian
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'guardian.backends.ObjectPermissionBackend',
@@ -106,12 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/5.0/topics/i18n/
-
 LANGUAGE_CODE = 'es-AR'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
 USE_I18N = True
 
